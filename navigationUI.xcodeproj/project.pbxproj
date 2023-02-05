@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C39A07FF2990129E004D8692 /* navigationUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39A07FE2990129E004D8692 /* navigationUIApp.swift */; };
 		C39A08012990129E004D8692 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39A08002990129E004D8692 /* ContentView.swift */; };
 		C39A0803299012A0004D8692 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39A0802299012A0004D8692 /* Assets.xcassets */; };
 		C39A0806299012A0004D8692 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39A0805299012A0004D8692 /* Preview Assets.xcassets */; };
 		C39A0810299012A1004D8692 /* navigationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39A080F299012A1004D8692 /* navigationUITests.swift */; };
 		C39A081A299012A1004D8692 /* navigationUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39A0819299012A1004D8692 /* navigationUIUITests.swift */; };
 		C39A081C299012A1004D8692 /* navigationUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39A081B299012A1004D8692 /* navigationUIUITestsLaunchTests.swift */; };
+		C39A082D299012FB004D8692 /* SwiftUINavigationViewWorkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39A082C299012FB004D8692 /* SwiftUINavigationViewWorkApp.swift */; };
+		C39A083029901342004D8692 /* FirstSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39A082F29901342004D8692 /* FirstSheetView.swift */; };
+		C39A083229901355004D8692 /* SecondSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39A083129901355004D8692 /* SecondSheetView.swift */; };
+		C39A083429901374004D8692 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39A083329901374004D8692 /* ModalView.swift */; };
+		C39A083629901385004D8692 /* SheetNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39A083529901385004D8692 /* SheetNavigator.swift */; };
+		C39A083829901394004D8692 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39A083729901394004D8692 /* View+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +40,6 @@
 
 /* Begin PBXFileReference section */
 		C39A07FB2990129E004D8692 /* navigationUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = navigationUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C39A07FE2990129E004D8692 /* navigationUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigationUIApp.swift; sourceTree = "<group>"; };
 		C39A08002990129E004D8692 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C39A0802299012A0004D8692 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C39A0805299012A0004D8692 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -44,6 +48,12 @@
 		C39A0815299012A1004D8692 /* navigationUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = navigationUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39A0819299012A1004D8692 /* navigationUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigationUIUITests.swift; sourceTree = "<group>"; };
 		C39A081B299012A1004D8692 /* navigationUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigationUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C39A082C299012FB004D8692 /* SwiftUINavigationViewWorkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUINavigationViewWorkApp.swift; sourceTree = "<group>"; };
+		C39A082F29901342004D8692 /* FirstSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSheetView.swift; sourceTree = "<group>"; };
+		C39A083129901355004D8692 /* SecondSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSheetView.swift; sourceTree = "<group>"; };
+		C39A083329901374004D8692 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		C39A083529901385004D8692 /* SheetNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetNavigator.swift; sourceTree = "<group>"; };
+		C39A083729901394004D8692 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +104,11 @@
 		C39A07FD2990129E004D8692 /* navigationUI */ = {
 			isa = PBXGroup;
 			children = (
-				C39A07FE2990129E004D8692 /* navigationUIApp.swift */,
-				C39A08002990129E004D8692 /* ContentView.swift */,
+				C39A082E2990132F004D8692 /* Views */,
+				C39A082B299012D0004D8692 /* Extensions */,
+				C39A082A299012C2004D8692 /* Helpers */,
+				C39A0829299012B9004D8692 /* Screens */,
+				C39A0828299012AD004D8692 /* Utilities */,
 				C39A0802299012A0004D8692 /* Assets.xcassets */,
 				C39A0804299012A0004D8692 /* Preview Content */,
 			);
@@ -125,6 +138,48 @@
 				C39A081B299012A1004D8692 /* navigationUIUITestsLaunchTests.swift */,
 			);
 			path = navigationUIUITests;
+			sourceTree = "<group>";
+		};
+		C39A0828299012AD004D8692 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C39A082C299012FB004D8692 /* SwiftUINavigationViewWorkApp.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C39A0829299012B9004D8692 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C39A08002990129E004D8692 /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C39A082A299012C2004D8692 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C39A083329901374004D8692 /* ModalView.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		C39A082B299012D0004D8692 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C39A083529901385004D8692 /* SheetNavigator.swift */,
+				C39A083729901394004D8692 /* View+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C39A082E2990132F004D8692 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C39A082F29901342004D8692 /* FirstSheetView.swift */,
+				C39A083129901355004D8692 /* SecondSheetView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +312,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C39A083829901394004D8692 /* View+Ext.swift in Sources */,
+				C39A083429901374004D8692 /* ModalView.swift in Sources */,
+				C39A082D299012FB004D8692 /* SwiftUINavigationViewWorkApp.swift in Sources */,
 				C39A08012990129E004D8692 /* ContentView.swift in Sources */,
-				C39A07FF2990129E004D8692 /* navigationUIApp.swift in Sources */,
+				C39A083229901355004D8692 /* SecondSheetView.swift in Sources */,
+				C39A083629901385004D8692 /* SheetNavigator.swift in Sources */,
+				C39A083029901342004D8692 /* FirstSheetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
